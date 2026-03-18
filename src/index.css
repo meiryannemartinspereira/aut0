@@ -1,7 +1,6 @@
 /* ========================= */
 /* VARIÁVEIS (TEMA CLEAN) */
 /* ========================= */
-
 :root {
   --primary: #2d2d2d;
   --secondary: #4d4d4d;
@@ -16,7 +15,6 @@
 /* ========================= */
 /* RESET */
 /* ========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +46,6 @@ button {
 /* ========================= */
 /* CONTAINER */
 /* ========================= */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -57,7 +54,6 @@ button {
 /* ========================= */
 /* NAVBAR */
 /* ========================= */
-
 .nav-wrapper {
   background: #fff;
   border-bottom: 1px solid var(--border);
@@ -69,7 +65,6 @@ button {
 /* ========================= */
 /* MENU */
 /* ========================= */
-
 .menu-root {
   display: flex;
   gap: 25px;
@@ -98,16 +93,19 @@ button {
   color: var(--primary);
 }
 
+/* ========================= */
+/* ICONE CATEGORIAS CINZA PADRÃO */
+/* ========================= */
 .menu-link img {
   width: 22px;
   height: 22px;
   object-fit: contain;
+  filter: grayscale(100%) brightness(80%);
 }
 
 /* ========================= */
-/* MEGA MENU (FIXADO) */
+/* MEGA MENU (VERTICAL) */
 /* ========================= */
-
 .mega-menu {
   position: absolute;
   top: 100%;
@@ -116,6 +114,7 @@ button {
   max-width: 1000px;
   background: #fff;
   display: flex;
+  flex-direction: row; /* colunas lado a lado */
   gap: 30px;
   padding: 20px;
   border: 1px solid var(--border);
@@ -123,19 +122,21 @@ button {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* Cada coluna do mega menu fica vertical */
 .mega-column {
   min-width: 180px;
-  position: relative;
+  display: flex;
+  flex-direction: column; /* garante filhos em fila vertical */
+  gap: 8px;
 }
 
+/* Cada item principal dentro da coluna */
 .mega-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block; /* força vertical */
   padding: 6px 0;
-  cursor: pointer;
   font-size: 14px;
   color: var(--secondary);
+  cursor: pointer;
   transition: 0.2s;
   font-weight: 500;
   white-space: nowrap;
@@ -151,9 +152,8 @@ button {
 }
 
 /* ========================= */
-/* SUBMENU (CORRIGIDO) */
+/* SUBMENU (VERTICAL) */
 /* ========================= */
-
 .sub-menu {
   position: absolute;
   top: 0;
@@ -164,9 +164,13 @@ button {
   padding: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   margin-left: -5px;
+  display: flex;
+  flex-direction: column; /* itens empilhados verticalmente */
+  gap: 5px;
 }
 
 .sub-item {
+  display: block; /* força vertical */
   padding: 6px 0;
   font-size: 13px;
   color: var(--secondary);
@@ -182,7 +186,6 @@ button {
 /* ========================= */
 /* PRODUTOS */
 /* ========================= */
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -219,8 +222,6 @@ button {
 
 /* ========================= */
 /* PREÇOS */
-/* ========================= */
-
 .old-price {
   text-decoration: line-through;
   color: #999;
@@ -266,8 +267,6 @@ button {
 
 /* ========================= */
 /* BOTÃO */
-/* ========================= */
-
 .btn-buy {
   background-color: var(--green);
   color: #fff;
@@ -296,8 +295,6 @@ button[style] {
 
 /* ========================= */
 /* RESPONSIVO */
-/* ========================= */
-
 @media (max-width: 900px) {
   .menu-root {
     flex-wrap: wrap;
@@ -314,6 +311,8 @@ button[style] {
   }
 }
 
+/* ========================= */
+/* FOOTER */
 .footer {
   background: #222;
   color: #fff;
@@ -372,12 +371,4 @@ button[style] {
   margin-top: 30px;
   font-size: 12px;
   color: #aaa;
-}
-
-.menu-link img {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-
-  filter: grayscale(100%) brightness(80%);
 }
