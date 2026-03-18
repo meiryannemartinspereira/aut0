@@ -373,3 +373,11 @@ button[style] {
   font-size: 12px;
   color: #aaa;
 }
+
+.menu-link img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+
+  filter: grayscale(100%) brightness(80%);
+}
