@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
       </p>
 
       <button className="btn-buy">
-        Comprar
+        Adicionar ao carrinho
       </button>
     </div>
   )
