@@ -62,10 +62,12 @@ button {
   background: #fff;
   border-bottom: 1px solid var(--border);
   overflow: visible;
+  position: relative;
+  z-index: 100;
 }
 
 /* ========================= */
-/* MENU PRINCIPAL */
+/* MENU */
 /* ========================= */
 
 .menu-root {
@@ -73,6 +75,7 @@ button {
   gap: 25px;
   list-style: none;
   align-items: center;
+  position: relative;
 }
 
 .menu-item {
@@ -102,36 +105,40 @@ button {
 }
 
 /* ========================= */
-/* MEGA MENU */
+/* MEGA MENU (FIXADO) */
 /* ========================= */
 
 .mega-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 850px;
+  min-width: 700px;
+  max-width: 1000px;
   background: #fff;
   display: flex;
+  gap: 30px;
   padding: 20px;
   border: 1px solid var(--border);
   z-index: 999;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .mega-column {
-  width: 200px;
+  min-width: 180px;
   position: relative;
 }
 
 .mega-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 6px 0;
   cursor: pointer;
   font-size: 14px;
   color: var(--secondary);
   transition: 0.2s;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .mega-item:hover {
@@ -144,18 +151,19 @@ button {
 }
 
 /* ========================= */
-/* SUBMENU */
+/* SUBMENU (CORRIGIDO) */
 /* ========================= */
 
 .sub-menu {
   position: absolute;
   top: 0;
   left: 100%;
-  width: 220px;
+  min-width: 220px;
   background: #fff;
   border: 1px solid var(--border);
   padding: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-left: -5px;
 }
 
 .sub-item {
@@ -164,6 +172,7 @@ button {
   color: var(--secondary);
   cursor: pointer;
   transition: 0.2s;
+  white-space: nowrap;
 }
 
 .sub-item:hover {
@@ -191,7 +200,7 @@ button {
 }
 
 .product-card:hover {
-  box-shadow: 0 6px 16px #FFA500;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 .product-image {
@@ -208,25 +217,51 @@ button {
   min-height: 40px;
 }
 
-/* PREÇO ESTILO LOJA */
+/* ========================= */
+/* PREÇOS */
+/* ========================= */
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+}
+
+.discount {
+  color: var(--green);
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
 .product-price {
   display: flex;
   align-items: flex-start;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: var(--primary);
+  margin: 5px 0;
 }
 
 .product-price .currency {
   font-size: 12px;
   margin-right: 4px;
   margin-top: 4px;
-  color: #FFA500;
+  color: var(--text-light);
 }
 
 .product-price .value {
   font-size: 22px;
-  color: #FFA500;
+  color: var(--primary);
+}
+
+.installments {
+  font-size: 12px;
+  color: var(--text-light);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.installments strong {
+  color: var(--primary);
 }
 
 /* ========================= */
@@ -252,6 +287,13 @@ button {
   transform: scale(0.97);
 }
 
+/* FORÇA BOTÕES INLINE */
+button[style] {
+  background: var(--green) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
 /* ========================= */
 /* RESPONSIVO */
 /* ========================= */
@@ -270,60 +312,4 @@ button {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/* ========================= */
-/* FORÇAR INLINE */
-/* ========================= */
-
-button[style] {
-  background: var(--green) !important;
-  color: #fff !important;
-}
-
-/* ========================= */
-/* PREÇOS COMPLETOS */
-/* ========================= */
-
-/* PREÇO ANTIGO */
-.old-price {
-  text-decoration: line-through;
-  color: #f2762e;
-  font-size: 12px;
-}
-
-/* DESCONTO */
-.discount {
-  color: var(--green);
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 2px;
-}
-
-/* PREÇO ATUAL */
-.product-price {
-  display: flex;
-  align-items: flex-start;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.product-price .currency {
-  font-size: 12px;
-  margin-right: 4px;
-  margin-top: 4px;
-  color: #f2762e;
-}
-
-
-/* PARCELAMENTO */
-.installments {
-  font-size: 12px;
-  color: var(--text-light);
-  line-height: 1.4;
-  margin-bottom: 10px;
-}
-
-.installments strong {
-  color: var(--primary);
 }
