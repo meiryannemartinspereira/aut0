@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Navbar from "../components/Navbar"
 import Banner from "../components/Banner"
+import Footer from "../components/Footer"
 import ProductGrid from "../components/ProductGrid"
 
 const products = Array.from({ length: 10 }).map((_, i) => ({
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <ProductGrid products={products} />
+      <Footer />
     </>
   )
 }
