@@ -1,16 +1,10 @@
-export default function Navbar() {
-  const categories = [
-    "Motor", "Freios", "Suspensão", "Elétrica", "Acessórios"
-  ]
+import CategoriesMenu from "./CategoriesMenu"
 
+export default function Navbar() {
   return (
-    <div style={{ background: "#fff", borderBottom: "1px solid #eee" }}>
-      <div className="container" style={{ display: "flex", gap: 20, padding: "10px 0", fontSize: 14 }}>
-        {categories.map((c, i) => (
-          <span key={i} style={{ cursor: "pointer" }}>
-            {c}
-          </span>
-        ))}
+    <div className="nav-wrapper">
+      <div className="container">
+        <CategoriesMenu />
       </div>
     </div>
   )
