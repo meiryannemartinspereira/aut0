@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
 
       {/* PREÇO ANTIGO */}
       <span className="old-price">
-        R$ 300,00{product.oldPrice}
+        {product.oldPrice}
       </span>
 
       {/* DESCONTO */}
