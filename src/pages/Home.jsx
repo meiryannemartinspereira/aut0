@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import ProductGrid from "../components/ProductGrid"
+import BenefitsBanner from "../components/BenefitsBanner"
 
 const products = Array.from({ length: 10 }).map((_, i) => ({
   id: i,
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Navbar />
       <Banner />
+      <BenefitsBanner />
       <ProductGrid products={products} />
       <Footer />
     </>
