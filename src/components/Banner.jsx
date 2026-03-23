@@ -13,12 +13,8 @@ export default function Banner() {
         autoplay={{ delay: 3000 }}
         loop
       >
-        <SwiperSlide>
-          <img src="/banner.jpg" />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img src="/banner2.jpg" />
+      <SwiperSlide>
+        <img src="https://images.tcdn.com.br/img/img_prod/946974/69384f1d46e0e_BANNER_1.png" />
         </SwiperSlide>
       </Swiper>
     </div>
