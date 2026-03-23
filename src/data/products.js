@@ -36,5 +36,45 @@ export const products = [
     price: "3.231,00",
     image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
     oldPrice: "3.590,00"
+  },
+
+    {
+    id: 6,
+    name: "id6",
+    price: "3.231,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    oldPrice: "3.590,00"
+  },
+
+    {
+    id: 7,
+    name: "id7",
+    price: "3.231,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    oldPrice: "3.590,00"
+  },
+
+    {
+    id: 8,
+    name: "id8",
+    price: "3.231,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    oldPrice: "3.590,00"
+  },
+
+    {
+    id: 9,
+    name: "id9",
+    price: "3.231,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    oldPrice: "3.590,00"
+  }, 
+
+    {
+    id: 10,
+    name: "id10",
+    price: "3.231,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    oldPrice: "3.590,00"
   }
 ]
