@@ -40,41 +40,41 @@ export const products = [
 
     {
     id: 6,
-    name: "id6",
+    name: "Caixa de Direção Hyundai Azera 3.0 2011 Até 2017",
     price: "3.231,00",
-    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_azera_3_0_2011_ate_2017_23869_2_f948712c9f03454129d65b2b1a7a9735.jpg",
     oldPrice: "3.590,00"
   },
 
     {
     id: 7,
-    name: "id7",
-    price: "3.231,00",
-    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
-    oldPrice: "3.590,00"
+    name: "Caixa de Direção Hyundai Azera 3.0 V6 24V 2011 Até 2016",
+    price: "3.510,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_azera_3_0_v6_24v_2011_ate_2016_23873_4_4f65b0267956e1fd74b704c93f997b0d.jpg",
+    oldPrice: "3.900,00"
   },
 
     {
     id: 8,
-    name: "id8",
+    name: "Caixa de Direção Hyundai Sonata 2.4 2010 Até 2015",
     price: "3.231,00",
-    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_sonata_2_4_2010_ate_2015_23893_2_f948712c9f03454129d65b2b1a7a9735.jpg",
     oldPrice: "3.590,00"
   },
 
     {
     id: 9,
-    name: "id9",
-    price: "3.231,00",
-    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
-    oldPrice: "3.590,00"
+    name: "Caixa de Direção Elétrica 16,50mm Hyundai IX35 2.0 2012 Até 2022",
+    price: "2.610,00",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_eletrica_16_50mm_hyundai_ix35_2_0_2012_ate_2022_23881_2_6aa5a98e0f85f2194185a78fa3b04c84.jpg",
+    oldPrice: "2.900,00"
   }, 
 
     {
     id: 10,
-    name: "id10",
-    price: "3.231,00",
-    image: "https://images.tcdn.com.br/img/img_prod/946974/180_caixa_de_direcao_hyundai_tucson_2_0_2006_ate_2016_23897_4_e558aa5cdb8f51efd30b40bb9dd0ddc5.jpg",
-    oldPrice: "3.590,00"
+    name: "Bico Injetor Ssangyong Actyon Sports 2.0 Diesel após 2008 / KS.EJBR04501D",
+    price: "1.673,10",
+    image: "https://images.tcdn.com.br/img/img_prod/946974/180_bico_injetor_ssangyong_actyon_sports_2_0_diesel_apos_2008_ks_ejbr04501d_24051_4_c9662d8a8cda8d29b11e0147ada67e32.jpg",
+    oldPrice: "1.859,00"
   }
 ]
