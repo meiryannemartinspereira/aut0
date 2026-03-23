@@ -5,9 +5,11 @@ export default function Header() {
   return (
     <>
       {/* TOPBAR */}
-      <div style={{ background: "#0056b3", color: "#fff", fontSize: 14 }}>
+      <div style={{ background: "#f0f0f0", color: "#fff", fontSize: 14 }}>
         <div className="container" style={{ display: "flex", justifyContent: "space-between", padding: "6px 0" }}>
-          <span>Minha Conta</span>
+          <span style={{ color: "#333", fontWeight: 500, marginLeft: "auto" }}>
+            Minha Conta
+          </span>
         </div>
       </div>
 
@@ -22,30 +24,30 @@ export default function Header() {
 
             {/* BUSCA */}
             <div style={{ display: "flex", flex: 1 }}>
-              <input
-                placeholder="O que você procura?"
-                style={{
-                  flex: 1,
-                  height: 40,
-                  border: "1px solid #ccc",
-                  padding: "0 10px"
-                }}
-              />
-              <button style={{
+      <input
+        placeholder="O que você procura?"
+        style={{
+          flex: 1,
+          height: 40,
+          border: "none",                 // remove borda padrão
+          borderBottom: "1px solid #ccc", // 👈 só linha embaixo
+          padding: "0 10px",
+          fontFamily: "inherit",
+          fontStyle: "italic",
+          outline: "none"                 // remove borda azul ao focar
+        }}
+      />
+              {/* <button style={{
                 background: "#0056b3",
                 color: "#fff",
                 border: "none",
                 padding: "0 20px"
               }}>
                 Buscar
-              </button>
+              </button> */}
             </div>
 
             {/* AÇÕES */}
-            <div style={{ display: "flex", gap: 15 }}>
-              <span>Entrar</span>
-              <span>🛒 Carrinho</span>
-            </div>
           </div>
         </div>
       </div>
