@@ -9,7 +9,7 @@ export const categories = [
 
   {
     name: "MOTOR",
-    icon: "https://cdn-icons-png.flaticon.com/512/2967/2967350.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_27_20210226101919.png",
     children: [
       { name: "Correias" },
     ]
@@ -17,7 +17,7 @@ export const categories = [
 
   {
     name: "TRANSMISSÃO",
-    icon: "https://cdn-icons-png.flaticon.com/512/1995/1995470.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_29_20210226102241.png",
     children: [
       { name: "Embreagem" },
     ]
@@ -25,7 +25,7 @@ export const categories = [
 
   {
     name: "SUSPENSÃO",
-    icon: "https://cdn-icons-png.flaticon.com/512/809/809957.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_5_20210226101954.png",
     children: [
       { name: "Amortecedores" },
     ]
@@ -33,7 +33,7 @@ export const categories = [
 
   {
     name: "FILTROS",
-    icon: "https://cdn-icons-png.flaticon.com/512/1046/1046857.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_1_20210226103022.png",
     children: [
       { name: "Filtro de Óleo" },
     ]
@@ -41,7 +41,7 @@ export const categories = [
 
   {
     name: "LATARIA",
-    icon: "https://cdn-icons-png.flaticon.com/512/743/743922.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_9_20210226101846.png",
     children: [
       { name: "Parachoque" },
     ]
@@ -49,7 +49,7 @@ export const categories = [
 
   {
     name: "FREIOS",
-    icon: "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_31_20210226101823.png",
     children: [
       { name: "Pastilhas" },
     ]
@@ -57,7 +57,7 @@ export const categories = [
 
   {
     name: "ELÉTRICA",
-    icon: "https://cdn-icons-png.flaticon.com/512/3103/3103446.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_31_20210226101823.png",
     children: [
       { name: "Bateria" },
     ]
@@ -65,7 +65,7 @@ export const categories = [
 
   {
     name: "DIVERSOS",
-    icon: "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
+    icon: "https://images.tcdn.com.br/img/img_prod/946974/categoria_img_35_20210223214145.png",
     children: [
       { name: "Acessórios" },
     ]
