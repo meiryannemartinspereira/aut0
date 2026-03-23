@@ -224,7 +224,7 @@ button {
 /* PREÇOS */
 .old-price {
   text-decoration: line-through;
-  color: #999;
+  color: #FFA500;
   font-size: 12px;
 }
 
@@ -246,12 +246,12 @@ button {
   font-size: 12px;
   margin-right: 4px;
   margin-top: 4px;
-  color: var(--text-light);
+  color: #FFA500;
 }
 
 .product-price .value {
   font-size: 22px;
-  color: var(--primary);
+  color: #FFA500;
 }
 
 .installments {
