@@ -29,14 +29,12 @@ body {
   overflow-x: hidden;
 }
 
-/* IMAGENS RESPONSIVAS */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* LINKS */
 a {
   text-decoration: none;
   color: inherit;
@@ -48,6 +46,32 @@ button {
   background: none;
   font-family: inherit;
   cursor: pointer;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.whatsapp-button img {
+  width: 38px;
+  height: 28px;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #1ebe5d;
 }
 
 /* ========================= */
@@ -174,7 +198,7 @@ button {
 /* ========================= */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
@@ -185,6 +209,8 @@ button {
   background: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   transition: 0.2s;
 }
 
@@ -194,14 +220,19 @@ button {
 
 .product-image {
   width: 100%;
-  height: 150px;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 
 .product-name {
   font-size: 13px;
   margin: 10px 0;
-  min-height: 40px;
+  line-height: 1.4;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .old-price {
@@ -244,7 +275,7 @@ button {
   color: #fff;
   height: 35px;
   border-radius: 4px;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 .btn-buy:hover {
@@ -321,7 +352,6 @@ button {
   flex: 2 1 300px;
 }
 
-/* PADRÃO IGUAL MENU */
 .footer-title {
   font-size: 14px;
   font-weight: 600;
@@ -362,7 +392,6 @@ button {
   transform: scale(1.1);
 }
 
-/* COPYRIGHT */
 .footer-copy {
   margin-top: 30px;
   padding-top: 15px;
@@ -376,14 +405,6 @@ button {
 /* RESPONSIVO */
 /* ========================= */
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile */
 @media (max-width: 768px) {
   .menu-root {
     flex-direction: column;
@@ -415,16 +436,5 @@ button {
   .footer-copy {
     font-size: 11px;
     padding: 15px 10px;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile pequeno */
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: 1fr;
   }
 }
