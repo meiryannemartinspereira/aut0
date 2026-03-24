@@ -14,6 +14,16 @@ export default function Home() {
       <Navbar />
       <Banner />
       <BenefitsBanner />
+            {/* NOVO VÍDEO */}
+      <div className="video-container">
+        <iframe
+          className="video-frame"
+          src="https://www.youtube.com/embed/5Jsuzuz7i1U"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       <ProductGrid products={products} />
       <Footer />
       <WhatsAppButton />
