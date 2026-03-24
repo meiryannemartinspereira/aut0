@@ -142,11 +142,6 @@ button {
   color: var(--primary);
 }
 
-.arrow {
-  font-size: 11px;
-  color: var(--text-light);
-}
-
 /* ========================= */
 /* SUBMENU */
 /* ========================= */
@@ -209,7 +204,6 @@ button {
   min-height: 40px;
 }
 
-/* PREÇOS */
 .old-price {
   text-decoration: line-through;
   color: #FFA500;
@@ -323,7 +317,52 @@ button {
   flex: 1 1 200px;
 }
 
-/* 👇 NOVO: FOOTER COPY AJUSTADO */
+.footer-column.large {
+  flex: 2 1 300px;
+}
+
+/* PADRÃO IGUAL MENU */
+.footer-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-link {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-info {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.footer-social span:hover {
+  transform: scale(1.1);
+}
+
+/* COPYRIGHT */
 .footer-copy {
   margin-top: 30px;
   padding-top: 15px;
@@ -331,7 +370,6 @@ button {
   text-align: center;
   font-size: 12px;
   color: #aaa;
-  line-height: 1.5;
 }
 
 /* ========================= */
