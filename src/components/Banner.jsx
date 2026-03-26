@@ -10,7 +10,7 @@ export default function Banner() {
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
-        autoplay={{ delay: 3000 }} // 👈 5 segundos
+        autoplay={{ delay: 3000 }} // segundos
         loop
       >
         <SwiperSlide>
@@ -19,6 +19,18 @@ export default function Banner() {
 
         <SwiperSlide>
           <img src="https://images.tcdn.com.br/img/img_prod/946974/69384f1d46e0e_BANNER_1.png" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src="https://images.tcdn.com.br/img/img_prod/946974/69547aad8fa6f_BANNER32.png" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src="https://images.tcdn.com.br/img/img_prod/946974/697b7565c3ccc_BANNER21.png" />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img src="https://images.tcdn.com.br/img/img_prod/946974/697b756413688_BANNER31.png" />
         </SwiperSlide>
       </Swiper>
     </div>
